@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartCity360 - Video Demonstration Guide (10-15 Mins)</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 18mm;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #2c3e50;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .header-box {
+            background: linear-gradient(135deg, #1a5276, #2980b9);
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        h1 { margin: 0 0 10px 0; font-size: 22pt; }
+        .subtitle { font-size: 13pt; opacity: 0.95; }
+        .badge {
+            background-color: #27ae60;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 10pt;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .section-card {
+            background: #ffffff;
+            border: 1px solid #d6dbdf;
+            border-left: 6px solid #2980b9;
+            border-radius: 6px;
+            margin-bottom: 25px;
+            padding: 18px 22px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            page-break-inside: avoid;
+        }
+        .section-title {
+            color: #1a5276;
+            font-size: 14pt;
+            font-weight: bold;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed #bdc3c7;
+            padding-bottom: 6px;
+        }
+        .time-badge {
+            background-color: #e67e22;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 10pt;
+        }
+        .grid-box {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+        .activity-box {
+            background-color: #fcf3cf;
+            border-left: 4px solid #f39c12;
+            padding: 10px 14px;
+            border-radius: 4px;
+            font-size: 10.5pt;
+        }
+        .activity-box strong { color: #b9770e; }
+        .speech-box {
+            background-color: #e8f8f5;
+            border-left: 4px solid #27ae60;
+            padding: 12px 16px;
+            border-radius: 4px;
+            font-size: 11pt;
+            color: #145a32;
+        }
+        .speech-box strong { color: #1e8449; display: block; margin-bottom: 6px; }
+        .tip-box {
+            background-color: #ebf5fb;
+            border-left: 4px solid #3498db;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 9.5pt;
+            color: #21618c;
+            margin-top: 8px;
+        }
+        .general-guidelines {
+            background-color: #f8f9fa;
+            border: 1px solid #ebedef;
+            padding: 18px;
+            border-radius: 6px;
+            margin-bottom: 25px;
+        }
+        .general-guidelines h3 { margin-top: 0; color: #2c3e50; }
+        ol, ul { padding-left: 20px; }
+        li { margin-bottom: 6px; }
+        code {
+            background: #eaeded;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: Consolas, monospace;
+            font-size: 10pt;
+            color: #c0392b;
+        }
+        .page-break {
+            page-break-after: always;
+            break-after: page;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header-box">
+    <h1>SmartCity360 – Recorded Demonstration Video Guide</h1>
+    <div class="subtitle">10–15 Minute MP4 Video Recording Script & Step-by-Step Walkthrough</div>
+    <div class="badge">Object Oriented Design Patterns II (JIAT/OODP II / EX / 01)</div>
+</div>
+
+<div class="general-guidelines">
+    <h3> වීඩියෝව Record කිරීම සඳහා මූලික උපදෙස් (General Guidelines & Setup)</h3>
+    <ul>
+        <li><strong>කාල සීමාව (Duration):</strong> විනාඩි 10 ත් 15 ත් අතර (Strictly 10–15 Minutes). මීට වඩා අඩු හෝ වැඩි නොවිය යුතුය.</li>
+        <li><strong>වීඩියෝ Format එක:</strong> MP4 (Resolution: 1080p Full HD හෝ 720p).</li>
+        <li><strong>Recording Software:</strong> OBS Studio (Recommended) හෝ Windows Game Bar (<code>Win + G</code>) භාවිතා කළ හැක.</li>
+        <li><strong>Audio / කටහඬ:</strong> Background noise අවම කර, පැහැදිලි Headset එකක් හෝ Mic එකක් භාවිතා කරන්න.</li>
+        <li><strong>භාෂාව (Language):</strong> Presentation එක සම්පූර්ණයෙන්ම <strong>English</strong> වලින් සිදු කළ යුතුය. ඔබ කතා කළ යුතු සම්පූර්ණ Script එක පහත කොළ පැහැති කොටු (<strong>Speech Box</strong>) වල ලබා දී ඇති බැවින් එය බලාගෙන පැහැදිලිව කියවන්න.</li>
+        <li><strong>Screen Activity:</strong> කතා කරන අතරතුර තිරයේ කළ යුතු දේවල් කහ පැහැති කොටු (<strong>Activity Box</strong>) වල Sinhala සහ English වලින් පැහැදිලි කර ඇත.</li>
+        <li><strong>Application එක Run කරන ආකාරය:</strong> Terminal / CMD එක open කර <code>cd D:\SemiOODPII\SmartCity360</code> ගොස් <code>mvn compile exec:java</code> run කර Menu එක ලබා ගන්න.</li>
+    </ul>
+</div>
+
+<div class="page-break"></div>
+
+<!-- SCENE 1 -->
+<div class="section-card">
+    <div class="section-title">
+        <span>Scene 1: Introduction & System Architecture Overview</span>
+        <span class="time-badge">00:00 - 01:30 (1.5 Mins)</span>
+    </div>
+    <div class="grid-box">
+        <div class="activity-box">
+            <strong> තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
+            • IDE (IntelliJ IDEA, VS Code හෝ Eclipse) එක Screen එකේ පෙන්වන්න.<br>
+            • වම් පැත්තේ ඇති Project Explorer එකෙන් Package structure එක (<code>com.smartcity360.security</code>, <code>zones</code>, <code>complaints</code>, <code>streetlights</code>, <code>policy</code>, <code>app</code>) expand කර පෙන්වන්න.<br>
+            • Terminal එකේ <code>SmartCity360App</code> run කර Welcome Banner එක පෙන්වන්න.
+        </div>
+        <div class="speech-box">
+            <strong> මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
+            "Good day, Respected Evaluators. My name is [Your Name], and today I am demonstrating the SmartCity360 Municipal Management Platform, developed for the Object Oriented Design Patterns II Final Assessment.<br><br>
+            As a Senior Software Architect at UrbanTech Solutions, my objective was to design a decoupled, maintainable, and memory-efficient platform for smart municipal management. As you can see in the project tree, the solution systematically implements five Gang of Four (GoF) design patterns: Decorator, Composite, Chain of Responsibility, Flyweight, and Interpreter.<br><br>
+            Let us now examine each design pattern in action through our live interactive demonstration system."
+        </div>
+        <div class="tip-box">
+            <strong> Pro-Tip:</strong> කතා කරද්දී Cursor එකෙන් අදාළ packages උඩට mouse එක ගෙනියන්න.
+        </div>
+    </div>
+</div>
+
+<!-- SCENE 2 -->
+<div class="section-card">
+    <div class="section-title">
+        <span>Scene 2: Part A – Dynamic Security Wrappers for Data Streams (Decorator)</span>
+        <span class="time-badge">01:30 - 04:00 (2.5 Mins)</span>
+    </div>
+    <div class="grid-box">
+        <div class="activity-box">
+            <strong> තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
+            • IDE එකේ <code>DataStream.java</code>, <code>MeterDataStream.java</code>, සහ <code>DataStreamDecorator.java</code> files පෙන්වන්න.<br>
+            • <code>EncryptionDecorator.java</code>, <code>CompressionDecorator.java</code>, <code>AuthenticationDecorator.java</code> classes කෙටියෙන් පෙන්වන්න.<br>
+            • Interactive Menu එකේ <strong>Option 1</strong> type කර [ENTER] ඔබන්න.<br>
+            • Terminal එකේ output එකෙන් <em>Encrypted</em>, <em>Compressed</em>, <em>HMAC Attached</em>, සහ අවසානයේ <em>Verification Result: true</em> වන ආකාරය Cursor එකෙන් highlight කර පෙන්වන්න.
+        </div>
+        <div class="speech-box">
+            <strong> මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
+            "We begin with Part A: Dynamic Security Wrappers for Data Streams, where we applied the Decorator Pattern.<br><br>
+            Energy meters transmit critical power usage telemetry that must be secured with AES-128 Encryption, GZIP Compression, and HMAC Authentication. If we used static inheritance, supporting these optional features would result in an explosion of eight subclasses.<br><br>
+            By using the Decorator Pattern, our base component 'MeterDataStream' remains completely untouched, satisfying the Open/Closed Principle. In our runner code, we dynamically wrap the stream with Authentication, Compression, and Encryption.<br><br>
+            Now, observing the terminal output for Option 1: During transmission, the payload is authenticated with a SHA-256 signature, compressed to save bandwidth, and encrypted with AES-128. During reception, the layers are unwrapped in reverse order: decrypted, decompressed, and validated against tampering. As shown here, data integrity is 100% verified."
+        </div>
+        <div class="tip-box">
+            <strong> Pro-Tip:</strong> "Russian Matryoshka doll" උපමාව මතක් කරන්න. Core stream එක වෙනස් නොවී dynamic layers wrap වන බව εμφාස් කරන්න.
+        </div>
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- SCENE 3 -->
+<div class="section-card">
+    <div class="section-title">
+        <span>Scene 3: Part B – Hierarchical Structure of Smart Zones (Composite)</span>
+        <span class="time-badge">04:00 - 06:30 (2.5 Mins)</span>
+    </div>
+    <div class="grid-box">
+        <div class="activity-box">
+            <strong> තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
+            • IDE එකේ <code>ZoneComponent.java</code>, <code>Building.java</code> (Leaf), සහ <code>ZoneComposite.java</code> (Composite) open කර පෙන්වන්න.<br>
+            • Interactive Menu එකේ <strong>Option 2</strong> type කර [ENTER] ඔබන්න.<br>
+            • Terminal එකේ print වන Structural Hierarchy Tree එක (Greater Colombo -> Colombo 01 & 05 -> Streets -> Buildings) පෙන්වන්න.<br>
+            • Colombo 01 වලට 'shutdownPower()' command එක යැවූ පසු එහි usage 0 වී, මුළු city usage එක 2200 kWh සිට 340 kWh දක්වා අඩුවන ආකාරය පෙන්වන්න.
+        </div>
+        <div class="speech-box">
+            <strong> මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
+            "Moving to Part B: Hierarchical Structure of Smart Zones, where we implemented the Composite Pattern.<br><br>
+            A smart city is arranged in a natural spatial tree: City contains Districts, Districts contain Streets, and Streets contain Buildings. We need commands like 'shutdownPower()' and 'reportUsage()' to execute uniformly whether invoked on a single building or an entire metropolitan district.<br><br>
+            Our 'ZoneComponent' interface defines these operations. 'Building' is a Leaf node with no children, while 'ZoneComposite' holds a collection of ZoneComponents and recursively delegates commands.<br><br>
+            In the terminal output for Option 2: Notice the visual hierarchy tree. The initial city power draw is 2,200 kilowatt-hours. When we execute 'shutdownPower()' specifically on the Colombo 01 Business District, the command automatically cascades down through York Street and Galle Road, deactivating all four buildings. The city power draw drops immediately to 340 kWh, while Colombo 05 remains fully energized. When power is restored, the usage returns to 2,200 kWh. This demonstrates seamless recursive delegation without client-side type checking."
+        </div>
+        <div class="tip-box">
+            <strong> Pro-Tip:</strong> Client එකට `instanceof` හෝ `if(isDistrict)` check කිරීමට අවශ්‍ය නොවන බව (Uniform treatment) පවසන්න.
+        </div>
+    </div>
+</div>
+
+<!-- SCENE 4 -->
+<div class="section-card">
+    <div class="section-title">
+        <span>Scene 4: Part C – Escalation of Citizen Complaints (Chain of Responsibility)</span>
+        <span class="time-badge">06:30 - 09:00 (2.5 Mins)</span>
+    </div>
+    <div class="grid-box">
+        <div class="activity-box">
+            <strong> තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
+            • IDE එකේ <code>ComplaintHandler.java</code> base class එක සහ <code>LocalStaffHandler</code>, <code>SupervisorHandler</code>, <code>CityManagerHandler</code> පෙන්වන්න.<br>
+            • Interactive Menu එකේ <strong>Option 3</strong> type කර [ENTER] ඔබන්න.<br>
+            • Complaints 3 ක් process වන ආකාරය පෙන්වන්න:<br>
+              1. Trash issue (LOW) &rarr; Local Staff resolve කරයි.<br>
+              2. Water pipe leak (MEDIUM) &rarr; Local staff skip කර Supervisor resolve කරයි.<br>
+              3. Transformer explosion (CRITICAL) &rarr; Local Staff &rarr; Supervisor &rarr; City Manager වෙත escalate වී resolve වන ආකාරය පෙන්වන්න.
+        </div>
+        <div class="speech-box">
+            <strong> මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
+            "Next is Part C: Citizen Complaint Escalation, modeled using the Chain of Responsibility Pattern.<br><br>
+            Citizen complaints range from routine maintenance to city emergencies. Directly coupling the citizen portal to specific administrative officers creates rigid and fragile code. By using the Chain of Responsibility, we decouple the sender of the complaint from the receiver by passing requests along a chain of handlers.<br><br>
+            Looking at our console output for Option 3: First, complaint 101 regarding an overflowing trash bin has LOW severity. The 'Local Staff Field Unit' accepts and resolves it immediately.<br><br>
+            Second, complaint 102 involves a burst water pipe with MEDIUM severity. The Local Staff determines it exceeds their authority and passes it to the 'District Operations Supervisor', who authorizes the repair.<br><br>
+            Third, complaint 103 is a CRITICAL electrical explosion. Notice the automatic chain traversal: Local Staff passes to Supervisor, and Supervisor escalates to the 'City General Manager', who triggers the emergency protocol. The final audit summary verifies that every complaint has a recorded handler and resolution action."
+        </div>
+        <div class="tip-box">
+            <strong> Pro-Tip:</strong> Traceability සඳහා Complaint object එක තුළම Audit Trail එකක් maintain වන බව පෙන්වන්න.
+        </div>
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- SCENE 5 -->
+<div class="section-card">
+    <div class="section-title">
+        <span>Scene 5: Part D – Smart Streetlights Management & Benchmark (Flyweight)</span>
+        <span class="time-badge">09:00 - 11:30 (2.5 Mins)</span>
+    </div>
+    <div class="grid-box">
+        <div class="activity-box">
+            <strong> තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
+            • IDE එකේ <code>StreetLightType.java</code> (Intrinsic State) සහ <code>StreetLight.java</code> (Extrinsic State) පෙන්වන්න.<br>
+            • <code>StreetLightFactory.java</code> හි cache map එක පෙන්වන්න.<br>
+            • Interactive Menu එකේ <strong>Option 4</strong> type කර [ENTER] ඔබන්න.<br>
+            • Terminal එකේ <strong>50,000 Streetlights Memory Benchmark</strong> එක highlight කර පෙන්වන්න (108 MB vs 4.74 MB, ~95.6% memory savings).
+        </div>
+        <div class="speech-box">
+            <strong> මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
+            "Now let us examine Part D: Efficient Management of Smart Streetlights, using the Flyweight Pattern.<br><br>
+            A modern city operates tens of thousands of streetlights. Every single light shares identical hardware specifications: bulb model, wattage, color temperature, and calibration curves. However, their GPS coordinates, power status, and dimming percentages are unique.<br><br>
+            We partitioned the state into Intrinsic and Extrinsic. The Intrinsic State—which includes heavy 2KB calibration data—is encapsulated in the immutable 'StreetLightType' class and cached by 'StreetLightFactory'. The Extrinsic State—such as coordinates and power—remains in the lightweight 'StreetLight' context object.<br><br>
+            In the terminal benchmark for Option 4: We scaled the simulation to 50,000 physical fixtures. Without the Flyweight pattern, duplicating hardware specifications consumes 108.01 megabytes of JVM heap memory. With the Flyweight pattern, all 50,000 fixtures point to a single cached flyweight instance, reducing memory consumption to just 4.74 megabytes.<br><br>
+            This achieves a verified 95.6% memory reduction, preventing OutOfMemory errors and garbage collection latency at city-wide scale."
+        </div>
+        <div class="tip-box">
+            <strong> Pro-Tip:</strong> මෙම 95.6% memory reduction එක Examiners ලා ඉතාම ප්‍රිය කරන practical proof එකකි. එය පැහැදිලිව පෙන්වන්න.
+        </div>
+    </div>
+</div>
+
+<!-- SCENE 6 -->
+<div class="section-card">
+    <div class="section-title">
+        <span>Scene 6: Part E – City Policies Defined in DSL (Interpreter Pattern)</span>
+        <span class="time-badge">11:30 - 13:30 (2.0 Mins)</span>
+    </div>
+    <div class="grid-box">
+        <div class="activity-box">
+            <strong> තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
+            • IDE එකේ <code>Context.java</code>, <code>Expression.java</code>, <code>NumericComparisonExpression.java</code>, සහ <code>PolicyParser.java</code> පෙන්වන්න.<br>
+            • Interactive Menu එකේ <strong>Option 5</strong> type කර [ENTER] ඔබන්න.<br>
+            • DSL Rules (උදා: <code>noise_level > 70 AND hour >= 22</code>) Abstract Syntax Tree එකකට convert වී dynamic sensor context evaluate වන ආකාරය පෙන්වන්න.
+        </div>
+        <div class="speech-box">
+            <strong> මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
+            "For Part E: Interpreting City Policies Defined in DSL, we implemented the Interpreter Pattern.<br><br>
+            Municipal regulations, such as night-time noise curfews and commercial parking limits, change frequently. Hardcoding these rules as nested Java if-else statements requires rebuilding and redeploying the server for every policy change.<br><br>
+            We designed a Domain-Specific Language (DSL) mini-language. Our 'PolicyParser' translates plain-text rules into an Abstract Syntax Tree of 'Expression' objects. Terminal expressions evaluate relational conditions like greater-than or equals, while Non-Terminal expressions evaluate logical ANDs and ORs against dynamic sensor telemetry in the 'Context'.<br><br>
+            Observing terminal Option 5: Rule 1 specifies 'noise_level > 70 AND hour >= 22'. When tested against late-night residential telemetry at 11 PM with 82.5 decibels, it interprets as TRUE, automatically triggering a police dispatch alert. Against daytime telemetry, it evaluates as FALSE. Furthermore, overtime parking rules in commercial zones trigger automated parking citation tickets. This allows city administrators to update operational rules dynamically without touching a single line of backend code."
+        </div>
+        <div class="tip-box">
+            <strong> Pro-Tip:</strong> Text rule එකක් Runtime එකේදී Code compile නොකර evaluate කළ හැකි බව අවධාරණය කරන්න.
+        </div>
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- SCENE 7 -->
+<div class="section-card">
+    <div class="section-title">
+        <span>Scene 7: Automated JUnit Test Suite, Build Verification & Conclusion</span>
+        <span class="time-badge">13:30 - 15:00 (1.5 Mins)</span>
+    </div>
+    <div class="grid-box">
+        <div class="activity-box">
+            <strong> තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
+            • Terminal එකේ <code>mvn clean test</code> run කරන්න.<br>
+            • Automated Tests 6 ම pass වී <strong>BUILD SUCCESS</strong> ලැබෙන අයුරු පෙන්වන්න.<br>
+            • Interactive App එකේ <strong>Option 6 (Full End-to-End Simulation)</strong> කෙටියෙන් run කර පෙන්වන්න.<br>
+            • අවසානයේ Option 7 මඟින් Exit වී ස්තූතිවන්ත වන්න.
+        </div>
+        <div class="speech-box">
+            <strong> මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
+            "To guarantee system stability, we engineered a comprehensive automated test suite. Let us execute 'mvn clean test'.<br><br>
+            As you can observe in the build output: All six unit tests pass with zero failures and zero errors in less than a second, concluding with Maven BUILD SUCCESS. The tests rigorously validate tamper detection in the Decorator, power cascading in the Composite, multi-tier escalation in the Chain of Responsibility, object identity caching in the Flyweight, and complex Boolean logic in the Interpreter.<br><br>
+            In conclusion, SmartCity360 successfully applies the five Gang of Four design patterns to resolve critical architectural challenges in modularity, extensibility, loose coupling, memory optimization, and dynamic rule interpretation.<br><br>
+            Thank you very much for your time and evaluation."
+        </div>
+        <div class="tip-box">
+            <strong> Pro-Tip:</strong> "Thank you very much for your time and evaluation" යැයි පවසා recording එක stop කරන්න.
+        </div>
+    </div>
+</div>
+
+<div class="general-guidelines" style="margin-top: 25px;">
+    <h3> Video Record කළ පසු කළ යුතු දේ (After Recording):</h3>
+    <ol>
+        <li>Video file එක <code>.mp4</code> format එකෙන් save වී ඇත්දැයි බලන්න.</li>
+        <li>Video එක play කර Audio එක පැහැදිලිව ඇසෙනවාද, Code සහ Terminal screen එක පැහැදිලිව පෙනෙනවාදැයි පරීක්ෂා කරන්න.</li>
+        <li>කාලය විනාඩි 10 ත් 15 ත් අතර පවතී දැයි තහවුරු කරගන්න.</li>
+        <li>Student Portal එකේ <strong>Demonstration Video</strong> section එකට upload කරන්න.</li>
+    </ol>
+</div>
+
+</body>
+</html>
