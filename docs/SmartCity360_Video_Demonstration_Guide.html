@@ -2,7 +2,7 @@
 <html lang="si">
 <head>
     <meta charset="UTF-8">
-    <title>SmartCity360 - Video Demonstration Guide (10-15 Mins)</title>
+    <title>SmartCity360 - Video Demonstration Guide (Full-Stack 3-Tier)</title>
     <style>
         @page {
             size: A4;
@@ -121,20 +121,22 @@
 
 <div class="header-box">
     <h1>SmartCity360 – Recorded Demonstration Video Guide</h1>
-    <div class="subtitle">10–15 Minute MP4 Video Recording Script & Step-by-Step Walkthrough</div>
+    <div class="subtitle">Full-Stack Spring Boot + MySQL + Modern UI Dashboard (10–15 Mins)</div>
     <div class="badge">Object Oriented Design Patterns II (JIAT/OODP II / EX / 01)</div>
 </div>
 
 <div class="general-guidelines">
     <h3> වීඩියෝව Record කිරීම සඳහා මූලික උපදෙස් (General Guidelines & Setup)</h3>
     <ul>
-        <li><strong>කාල සීමාව (Duration):</strong> විනාඩි 10 ත් 15 ත් අතර (Strictly 10–15 Minutes). මීට වඩා අඩු හෝ වැඩි නොවිය යුතුය.</li>
+        <li><strong>කාල සීමාව (Duration):</strong> විනාඩි 10 ත් 15 ත් අතර (Strictly 10–15 Minutes).</li>
         <li><strong>වීඩියෝ Format එක:</strong> MP4 (Resolution: 1080p Full HD හෝ 720p).</li>
-        <li><strong>Recording Software:</strong> OBS Studio (Recommended) හෝ Windows Game Bar (<code>Win + G</code>) භාවිතා කළ හැක.</li>
-        <li><strong>Audio / කටහඬ:</strong> Background noise අවම කර, පැහැදිලි Headset එකක් හෝ Mic එකක් භාවිතා කරන්න.</li>
-        <li><strong>භාෂාව (Language):</strong> Presentation එක සම්පූර්ණයෙන්ම <strong>English</strong> වලින් සිදු කළ යුතුය. ඔබ කතා කළ යුතු සම්පූර්ණ Script එක පහත කොළ පැහැති කොටු (<strong>Speech Box</strong>) වල ලබා දී ඇති බැවින් එය බලාගෙන පැහැදිලිව කියවන්න.</li>
-        <li><strong>Screen Activity:</strong> කතා කරන අතරතුර තිරයේ කළ යුතු දේවල් කහ පැහැති කොටු (<strong>Activity Box</strong>) වල Sinhala සහ English වලින් පැහැදිලි කර ඇත.</li>
-        <li><strong>Application එක Run කරන ආකාරය:</strong> Terminal / CMD එක open කර <code>cd D:\SemiOODPII\SmartCity360</code> ගොස් <code>mvn compile exec:java</code> run කර Menu එක ලබා ගන්න.</li>
+        <li><strong>Full-Stack Architecture එක පෙන්වීම:</strong>
+            <br>1. <strong>MySQL Database (`smartcity360_db`):</strong> MySQL Workbench / CLI එකේ tables 5 පෙන්වන්න.
+            <br>2. <strong>Spring Boot REST Backend:</strong> Terminal එකේ <code>mvn spring-boot:run</code> කර port 8080 එකේ run වන බව පෙන්වන්න.
+            <br>3. <strong>Interactive Modern Dashboard UI:</strong> Browser එකෙන් <code>http://localhost:8080</code> හෝ JavaFX window එකෙන් UI views පෙන්වන්න.
+        </li>
+        <li><strong>භාෂාව (Language):</strong> Presentation එක සම්පූර්ණයෙන්ම <strong>English</strong> වලින් සිදු කළ යුතුය (කොළ පැහැති <strong>Speech Box</strong> හි ඇති script එක කියවන්න).</li>
+        <li><strong>තිරයේ කළ යුතු ක්‍රියාකාරකම්:</strong> කහ පැහැති <strong>Activity Box</strong> හි Sinhala & English වලින් පියවරෙන් පියවර දක්වා ඇත.</li>
     </ul>
 </div>
 
@@ -143,24 +145,24 @@
 <!-- SCENE 1 -->
 <div class="section-card">
     <div class="section-title">
-        <span>Scene 1: Introduction & System Architecture Overview</span>
-        <span class="time-badge">00:00 - 01:30 (1.5 Mins)</span>
+        <span>Scene 1: Introduction, 3-Tier Architecture & MySQL Database</span>
+        <span class="time-badge">00:00 - 02:00 (2.0 Mins)</span>
     </div>
     <div class="grid-box">
         <div class="activity-box">
             <strong> තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
-            • IDE (IntelliJ IDEA, VS Code හෝ Eclipse) එක Screen එකේ පෙන්වන්න.<br>
-            • වම් පැත්තේ ඇති Project Explorer එකෙන් Package structure එක (<code>com.smartcity360.security</code>, <code>zones</code>, <code>complaints</code>, <code>streetlights</code>, <code>policy</code>, <code>app</code>) expand කර පෙන්වන්න.<br>
-            • Terminal එකේ <code>SmartCity360App</code> run කර Welcome Banner එක පෙන්වන්න.
+            • MySQL Workbench හෝ Terminal එකෙන් MySQL database එක (<code>smartcity360_db</code>) සහ එහි ඇති tables 5 (<code>citizen_complaints</code>, <code>energy_telemetry_logs</code>, ආදිය) පෙන්වන්න.<br>
+            • Terminal එකේ <code>mvn spring-boot:run</code> කර Backend එක <code>http://localhost:8080</code> හි start වන අයුරු පෙන්වන්න.<br>
+            • Browser / JavaFX window එකෙන් <strong>SmartCity360 Modern Dashboard</strong> එක විවෘත කර "All systems operational" pill එක සහ Cards 5 පෙන්වන්න.
         </div>
         <div class="speech-box">
             <strong> මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
-            "Good day, Respected Evaluators. My name is [Your Name], and today I am demonstrating the SmartCity360 Municipal Management Platform, developed for the Object Oriented Design Patterns II Final Assessment.<br><br>
-            As a Senior Software Architect at UrbanTech Solutions, my objective was to design a decoupled, maintainable, and memory-efficient platform for smart municipal management. As you can see in the project tree, the solution systematically implements five Gang of Four (GoF) design patterns: Decorator, Composite, Chain of Responsibility, Flyweight, and Interpreter.<br><br>
-            Let us now examine each design pattern in action through our live interactive demonstration system."
+            "Good day, Respected Evaluators. My name is Sadeepa Sri Rohanasinghe, and today I am demonstrating the SmartCity360 Municipal Management Platform, developed for the Object Oriented Design Patterns II Final Assessment.<br><br>
+            As a Senior Software Architect at UrbanTech Solutions, I have architected an enterprise 3-tier full-stack system. At the data layer, we have MySQL 8.0 running the `smartcity360_db` database with tables created by Hibernate. In the middle tier, we have a robust Spring Boot 3.x REST API hosting our five Gang of Four design patterns: Decorator, Composite, Chain of Responsibility, Flyweight, and Interpreter. At the presentation tier, we have a modern, responsive UI dashboard.<br><br>
+            Let us now walk through each design pattern in action across our full-stack architecture."
         </div>
         <div class="tip-box">
-            <strong> Pro-Tip:</strong> කතා කරද්දී Cursor එකෙන් අදාළ packages උඩට mouse එක ගෙනියන්න.
+            <strong> Pro-Tip:</strong> Spring Boot console එකේ "Started SmartCity360Application" log එක සහ MySQL database tables පැහැදිලිව පෙන්වන්න.
         </div>
     </div>
 </div>
@@ -168,26 +170,26 @@
 <!-- SCENE 2 -->
 <div class="section-card">
     <div class="section-title">
-        <span>Scene 2: Part A – Dynamic Security Wrappers for Data Streams (Decorator)</span>
-        <span class="time-badge">01:30 - 04:00 (2.5 Mins)</span>
+        <span>Scene 2: Part A – Dynamic Security Wrappers (Decorator Pattern)</span>
+        <span class="time-badge">02:00 - 04:30 (2.5 Mins)</span>
     </div>
     <div class="grid-box">
         <div class="activity-box">
             <strong> තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
-            • IDE එකේ <code>DataStream.java</code>, <code>MeterDataStream.java</code>, සහ <code>DataStreamDecorator.java</code> files පෙන්වන්න.<br>
-            • <code>EncryptionDecorator.java</code>, <code>CompressionDecorator.java</code>, <code>AuthenticationDecorator.java</code> classes කෙටියෙන් පෙන්වන්න.<br>
-            • Interactive Menu එකේ <strong>Option 1</strong> type කර [ENTER] ඔබන්න.<br>
-            • Terminal එකේ output එකෙන් <em>Encrypted</em>, <em>Compressed</em>, <em>HMAC Attached</em>, සහ අවසානයේ <em>Verification Result: true</em> වන ආකාරය Cursor එකෙන් highlight කර පෙන්වන්න.
+            • Dashboard එකෙන් <strong>Part A: Dynamic Security Wrappers</strong> card එක click කරන්න.<br>
+            • "Energy Meter Raw Data Stream" text area එක පෙන්වා, Encryption, Compression, සහ Authentication toggle switches 3 ම ON කරන්න.<br>
+            • <strong>Process Stream &rarr;</strong> button එක click කරන්න.<br>
+            • Spring Boot REST API එක මඟින් Decorator pipeline එක හරහා payload එක wrap වී, verify වී, MySQL <code>energy_telemetry_logs</code> table එකට save වන output එක පෙන්වන්න.
         </div>
         <div class="speech-box">
             <strong> මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
-            "We begin with Part A: Dynamic Security Wrappers for Data Streams, where we applied the Decorator Pattern.<br><br>
-            Energy meters transmit critical power usage telemetry that must be secured with AES-128 Encryption, GZIP Compression, and HMAC Authentication. If we used static inheritance, supporting these optional features would result in an explosion of eight subclasses.<br><br>
-            By using the Decorator Pattern, our base component 'MeterDataStream' remains completely untouched, satisfying the Open/Closed Principle. In our runner code, we dynamically wrap the stream with Authentication, Compression, and Encryption.<br><br>
-            Now, observing the terminal output for Option 1: During transmission, the payload is authenticated with a SHA-256 signature, compressed to save bandwidth, and encrypted with AES-128. During reception, the layers are unwrapped in reverse order: decrypted, decompressed, and validated against tampering. As shown here, data integrity is 100% verified."
+            "In Part A, we demonstrate dynamic security wrapping for energy telemetry streams using the Decorator Pattern.<br><br>
+            Energy meters transmit high-frequency electrical usage data that must be secured with AES-128 Encryption, GZIP Compression, and HMAC Authentication. If we used static inheritance, supporting all optional permutations would produce an explosion of eight subclasses.<br><br>
+            By applying the Decorator Pattern, our base component 'MeterDataStream' remains completely unaltered, upholding the Open/Closed Principle. In our UI, we have toggled on Encryption, Compression, and Authentication.<br><br>
+            When we click 'Process Stream', our Spring Boot backend dynamically assembles the decorator pipeline. Outbound, the payload is signed with a SHA-256 HMAC token, compressed, and encrypted with AES-128. Inbound, the stream unwraps in reverse: decrypted, decompressed, and authenticated against tampering. As displayed on screen, data integrity is 100% verified, and the telemetry audit log is persisted in MySQL."
         </div>
         <div class="tip-box">
-            <strong> Pro-Tip:</strong> "Russian Matryoshka doll" උපමාව මතක් කරන්න. Core stream එක වෙනස් නොවී dynamic layers wrap වන බව εμφාස් කරන්න.
+            <strong> Pro-Tip:</strong> Toggles on/off කර runtime එකේදී dynamic composition සිදුවන බව පෙන්වන්න.
         </div>
     </div>
 </div>
@@ -197,26 +199,26 @@
 <!-- SCENE 3 -->
 <div class="section-card">
     <div class="section-title">
-        <span>Scene 3: Part B – Hierarchical Structure of Smart Zones (Composite)</span>
-        <span class="time-badge">04:00 - 06:30 (2.5 Mins)</span>
+        <span>Scene 3: Part B – Smart Zone Hierarchy (Composite Pattern)</span>
+        <span class="time-badge">04:30 - 07:00 (2.5 Mins)</span>
     </div>
     <div class="grid-box">
         <div class="activity-box">
             <strong> තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
-            • IDE එකේ <code>ZoneComponent.java</code>, <code>Building.java</code> (Leaf), සහ <code>ZoneComposite.java</code> (Composite) open කර පෙන්වන්න.<br>
-            • Interactive Menu එකේ <strong>Option 2</strong> type කර [ENTER] ඔබන්න.<br>
-            • Terminal එකේ print වන Structural Hierarchy Tree එක (Greater Colombo -> Colombo 01 & 05 -> Streets -> Buildings) පෙන්වන්න.<br>
-            • Colombo 01 වලට 'shutdownPower()' command එක යැවූ පසු එහි usage 0 වී, මුළු city usage එක 2200 kWh සිට 340 kWh දක්වා අඩුවන ආකාරය පෙන්වන්න.
+            • Navigation එකෙන් <strong>Part B: Smart Zone Hierarchy</strong> view එකට යන්න.<br>
+            • Breadcrumb trail එක පෙන්වන්න: <code>Metro Colombo &rarr; Districts &rarr; Streets &rarr; Buildings</code>.<br>
+            • <strong>Execute Recursive Power Shutdown</strong> button එක click කරන්න &rarr; Colombo 01 power draw 0 වී, city power draw 2200 kWh සිට 340 kWh දක්වා අඩුවන අයුරු පෙන්වන්න.<br>
+            • <strong>Execute Recursive Usage Report</strong> click කර power නැවත restore කර පෙන්වන්න.
         </div>
         <div class="speech-box">
             <strong> මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
-            "Moving to Part B: Hierarchical Structure of Smart Zones, where we implemented the Composite Pattern.<br><br>
-            A smart city is arranged in a natural spatial tree: City contains Districts, Districts contain Streets, and Streets contain Buildings. We need commands like 'shutdownPower()' and 'reportUsage()' to execute uniformly whether invoked on a single building or an entire metropolitan district.<br><br>
-            Our 'ZoneComponent' interface defines these operations. 'Building' is a Leaf node with no children, while 'ZoneComposite' holds a collection of ZoneComponents and recursively delegates commands.<br><br>
-            In the terminal output for Option 2: Notice the visual hierarchy tree. The initial city power draw is 2,200 kilowatt-hours. When we execute 'shutdownPower()' specifically on the Colombo 01 Business District, the command automatically cascades down through York Street and Galle Road, deactivating all four buildings. The city power draw drops immediately to 340 kWh, while Colombo 05 remains fully energized. When power is restored, the usage returns to 2,200 kWh. This demonstrates seamless recursive delegation without client-side type checking."
+            "Moving to Part B: Smart Zone Hierarchy, modeled using the Composite Pattern.<br><br>
+            City infrastructure is organized in a natural spatial tree: City contains Districts, Districts contain Streets, and Streets contain individual Buildings. We need commands like 'shutdownPower()' and 'reportUsage()' to execute uniformly whether invoked on a single building or an entire district.<br><br>
+            In our design, 'Building' is a Leaf node, while 'ZoneComposite' holds a collection of children and recursively cascades operations.<br><br>
+            Observing the screen: The total city power consumption starts at 2,200 kilowatt-hours. When we click 'Execute Recursive Power Shutdown' on Colombo 01, the command automatically cascades through York Street and constituent buildings. Colombo 01 drops to 0 kWh, reducing metro grid load to 340 kWh, while Colombo 05 remains operational. Clicking 'Execute Recursive Usage Report' recalculates the bottom-up consumption and restores full grid power. This demonstrates seamless polymorphic recursion without client-side type checking."
         </div>
         <div class="tip-box">
-            <strong> Pro-Tip:</strong> Client එකට `instanceof` හෝ `if(isDistrict)` check කිරීමට අවශ්‍ය නොවන බව (Uniform treatment) පවසන්න.
+            <strong> Pro-Tip:</strong> Single building සහ whole district දෙකම එකම interface එකකින් uniform ලෙස ක්‍රියා කරන බව අවධාරණය කරන්න.
         </div>
     </div>
 </div>
@@ -224,29 +226,28 @@
 <!-- SCENE 4 -->
 <div class="section-card">
     <div class="section-title">
-        <span>Scene 4: Part C – Escalation of Citizen Complaints (Chain of Responsibility)</span>
-        <span class="time-badge">06:30 - 09:00 (2.5 Mins)</span>
+        <span>Scene 4: Part C – Citizen Complaint Escalation (Chain of Responsibility)</span>
+        <span class="time-badge">07:00 - 09:30 (2.5 Mins)</span>
     </div>
     <div class="grid-box">
         <div class="activity-box">
             <strong> තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
-            • IDE එකේ <code>ComplaintHandler.java</code> base class එක සහ <code>LocalStaffHandler</code>, <code>SupervisorHandler</code>, <code>CityManagerHandler</code> පෙන්වන්න.<br>
-            • Interactive Menu එකේ <strong>Option 3</strong> type කර [ENTER] ඔබන්න.<br>
-            • Complaints 3 ක් process වන ආකාරය පෙන්වන්න:<br>
-              1. Trash issue (LOW) &rarr; Local Staff resolve කරයි.<br>
-              2. Water pipe leak (MEDIUM) &rarr; Local staff skip කර Supervisor resolve කරයි.<br>
-              3. Transformer explosion (CRITICAL) &rarr; Local Staff &rarr; Supervisor &rarr; City Manager වෙත escalate වී resolve වන ආකාරය පෙන්වන්න.
+            • Dashboard එකෙන් <strong>Part C: Complaint Escalation</strong> view එකට යන්න.<br>
+            • Complaint description එකක් enter කරන්න (උදා: "Transformer explosion and power outage").<br>
+            • Severity Level එක <strong>Critical</strong> ලෙස select කරන්න.<br>
+            • <strong>Submit & Escalate &rarr;</strong> button එක click කරන්න.<br>
+            • Local Staff &rarr; Supervisor &rarr; City General Manager වෙත escalate වී complaint එක resolve වන Audit Log එක පෙන්වන්න.<br>
+            • MySQL table <code>citizen_complaints</code> හි අදාළ record එක save වී ඇති අයුරු පෙන්වන්න.
         </div>
         <div class="speech-box">
             <strong> මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
-            "Next is Part C: Citizen Complaint Escalation, modeled using the Chain of Responsibility Pattern.<br><br>
-            Citizen complaints range from routine maintenance to city emergencies. Directly coupling the citizen portal to specific administrative officers creates rigid and fragile code. By using the Chain of Responsibility, we decouple the sender of the complaint from the receiver by passing requests along a chain of handlers.<br><br>
-            Looking at our console output for Option 3: First, complaint 101 regarding an overflowing trash bin has LOW severity. The 'Local Staff Field Unit' accepts and resolves it immediately.<br><br>
-            Second, complaint 102 involves a burst water pipe with MEDIUM severity. The Local Staff determines it exceeds their authority and passes it to the 'District Operations Supervisor', who authorizes the repair.<br><br>
-            Third, complaint 103 is a CRITICAL electrical explosion. Notice the automatic chain traversal: Local Staff passes to Supervisor, and Supervisor escalates to the 'City General Manager', who triggers the emergency protocol. The final audit summary verifies that every complaint has a recorded handler and resolution action."
+            "Now let us examine Part C: Citizen Complaint Escalation, implemented with the Chain of Responsibility Pattern.<br><br>
+            Citizen complaints range from minor potholes to municipal emergencies. Directly hardcoding routing logic into the submission portal creates tight coupling. The Chain of Responsibility decouples the sender from the receiver by passing requests along an escalation chain of candidate handlers.<br><br>
+            In our UI: We enter a critical complaint regarding a transformer explosion. When we click 'Submit & Escalate', the request hits our Spring Boot endpoint. In the backend, Local Staff checks their authority—it exceeds their tier, so it delegates to the Supervisor, who in turn escalates to the City General Manager. The City General Manager triggers the municipal emergency protocol.<br><br>
+            As shown in the audit box and in our MySQL `citizen_complaints` table, the entire escalation path, the resolving authority, and timestamped resolution notes are recorded."
         </div>
         <div class="tip-box">
-            <strong> Pro-Tip:</strong> Traceability සඳහා Complaint object එක තුළම Audit Trail එකක් maintain වන බව පෙන්වන්න.
+            <strong> Pro-Tip:</strong> Request එකක් drop නොවී MySQL database එකේ audit trail එකක් save වන බව පෙන්වන්න.
         </div>
     </div>
 </div>
@@ -256,27 +257,26 @@
 <!-- SCENE 5 -->
 <div class="section-card">
     <div class="section-title">
-        <span>Scene 5: Part D – Smart Streetlights Management & Benchmark (Flyweight)</span>
-        <span class="time-badge">09:00 - 11:30 (2.5 Mins)</span>
+        <span>Scene 5: Part D – Smart Streetlights Management (Flyweight Pattern)</span>
+        <span class="time-badge">09:30 - 12:00 (2.5 Mins)</span>
     </div>
     <div class="grid-box">
         <div class="activity-box">
             <strong> තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
-            • IDE එකේ <code>StreetLightType.java</code> (Intrinsic State) සහ <code>StreetLight.java</code> (Extrinsic State) පෙන්වන්න.<br>
-            • <code>StreetLightFactory.java</code> හි cache map එක පෙන්වන්න.<br>
-            • Interactive Menu එකේ <strong>Option 4</strong> type කර [ENTER] ඔබන්න.<br>
-            • Terminal එකේ <strong>50,000 Streetlights Memory Benchmark</strong> එක highlight කර පෙන්වන්න (108 MB vs 4.74 MB, ~95.6% memory savings).
+            • Navigation එකෙන් <strong>Part D: Smart Street Lights</strong> view එකට යන්න.<br>
+            • Intrinsic State (shared hardware specs & 2KB calibration data) සහ Extrinsic State (GPS coordinates & dimming) විස්තර කරන්න.<br>
+            • <strong>Run 50,000 Lights Empirical Benchmark</strong> button එක click කරන්න.<br>
+            • Terminal / UI එකේ Benchmark metrics පෙන්වන්න: Without Flyweight: 108 MB vs With Flyweight: 4.74 MB, **95.6% memory savings**!
         </div>
         <div class="speech-box">
             <strong> මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
-            "Now let us examine Part D: Efficient Management of Smart Streetlights, using the Flyweight Pattern.<br><br>
-            A modern city operates tens of thousands of streetlights. Every single light shares identical hardware specifications: bulb model, wattage, color temperature, and calibration curves. However, their GPS coordinates, power status, and dimming percentages are unique.<br><br>
-            We partitioned the state into Intrinsic and Extrinsic. The Intrinsic State—which includes heavy 2KB calibration data—is encapsulated in the immutable 'StreetLightType' class and cached by 'StreetLightFactory'. The Extrinsic State—such as coordinates and power—remains in the lightweight 'StreetLight' context object.<br><br>
-            In the terminal benchmark for Option 4: We scaled the simulation to 50,000 physical fixtures. Without the Flyweight pattern, duplicating hardware specifications consumes 108.01 megabytes of JVM heap memory. With the Flyweight pattern, all 50,000 fixtures point to a single cached flyweight instance, reducing memory consumption to just 4.74 megabytes.<br><br>
-            This achieves a verified 95.6% memory reduction, preventing OutOfMemory errors and garbage collection latency at city-wide scale."
+            "In Part D, we tackle massive IoT device scaling using the Flyweight Pattern for smart streetlights.<br><br>
+            A metropolitan grid operates tens of thousands of streetlights. Every single light fixture shares identical physical specifications: bulb model, wattage, color temperature, and calibration curves. Only their GPS coordinates, power status, and dimming levels are unique.<br><br>
+            We separated the state into Intrinsic and Extrinsic. The Intrinsic State—including heavy 2KB spectral calibration arrays—is encapsulated in the immutable 'StreetLightType' flyweight and cached by 'StreetLightFactory'. The Extrinsic State is passed at runtime.<br><br>
+            When we click 'Run 50,000 Lights Empirical Benchmark', our backend executes an empirical JVM heap benchmark: Without the Flyweight pattern, duplicating specifications across 50,000 objects consumes 108.01 megabytes of heap. With the Flyweight pattern, all 50,000 objects share a single cached flyweight instance, slashing memory consumption to just 4.74 megabytes—achieving a verified 95.6% memory reduction."
         </div>
         <div class="tip-box">
-            <strong> Pro-Tip:</strong> මෙම 95.6% memory reduction එක Examiners ලා ඉතාම ප්‍රිය කරන practical proof එකකි. එය පැහැදිලිව පෙන්වන්න.
+            <strong> Pro-Tip:</strong> 95.6% memory savings එක සහ JVM Garbage Collection pauses අවම වන බව පවසන්න.
         </div>
     </div>
 </div>
@@ -284,25 +284,25 @@
 <!-- SCENE 6 -->
 <div class="section-card">
     <div class="section-title">
-        <span>Scene 6: Part E – City Policies Defined in DSL (Interpreter Pattern)</span>
-        <span class="time-badge">11:30 - 13:30 (2.0 Mins)</span>
+        <span>Scene 6: Part E – City Policy Rules DSL (Interpreter Pattern)</span>
+        <span class="time-badge">12:00 - 13:45 (1.75 Mins)</span>
     </div>
     <div class="grid-box">
         <div class="activity-box">
             <strong> තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
-            • IDE එකේ <code>Context.java</code>, <code>Expression.java</code>, <code>NumericComparisonExpression.java</code>, සහ <code>PolicyParser.java</code> පෙන්වන්න.<br>
-            • Interactive Menu එකේ <strong>Option 5</strong> type කර [ENTER] ඔබන්න.<br>
-            • DSL Rules (උදා: <code>noise_level > 70 AND hour >= 22</code>) Abstract Syntax Tree එකකට convert වී dynamic sensor context evaluate වන ආකාරය පෙන්වන්න.
+            • Dashboard එකෙන් <strong>Part E: City Policy Rules DSL</strong> view එකට යන්න.<br>
+            • Select Policy Rule dropdown එකෙන් "Night Noise Limit (noise_level > 70 AND hour >= 22)" තෝරන්න.<br>
+            • Input telemetry query එක පෙන්වන්න (<code>noise_level: 78, hour: 23</code>).<br>
+            • <strong>Evaluate Policy &rarr;</strong> button එක click කරන්න &rarr; AST Tree එක compile වී, VIOLATION DETECTED වී, "DISPATCH POLICE WARNING" action එක trigger වන අයුරු පෙන්වන්න.
         </div>
         <div class="speech-box">
             <strong> මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
-            "For Part E: Interpreting City Policies Defined in DSL, we implemented the Interpreter Pattern.<br><br>
-            Municipal regulations, such as night-time noise curfews and commercial parking limits, change frequently. Hardcoding these rules as nested Java if-else statements requires rebuilding and redeploying the server for every policy change.<br><br>
-            We designed a Domain-Specific Language (DSL) mini-language. Our 'PolicyParser' translates plain-text rules into an Abstract Syntax Tree of 'Expression' objects. Terminal expressions evaluate relational conditions like greater-than or equals, while Non-Terminal expressions evaluate logical ANDs and ORs against dynamic sensor telemetry in the 'Context'.<br><br>
-            Observing terminal Option 5: Rule 1 specifies 'noise_level > 70 AND hour >= 22'. When tested against late-night residential telemetry at 11 PM with 82.5 decibels, it interprets as TRUE, automatically triggering a police dispatch alert. Against daytime telemetry, it evaluates as FALSE. Furthermore, overtime parking rules in commercial zones trigger automated parking citation tickets. This allows city administrators to update operational rules dynamically without touching a single line of backend code."
+            "For Part E, we address dynamic municipal regulations using the Interpreter Pattern.<br><br>
+            City ordinances—such as night noise limits and commercial parking curfews—are modified frequently. Hardcoding these rules into Java if-else statements requires rebuilding and redeploying production servers for every policy amendment.<br><br>
+            We designed a Domain-Specific Language (DSL) mini-language. Our 'PolicyParser' translates plain-text rules into an Abstract Syntax Tree of Expression objects. In our UI, we select the Night Noise Rule: 'noise_level > 70 AND hour >= 22'. When evaluated against late-night residential telemetry at 11 PM with 78 decibels, the AST evaluates to TRUE, automatically triggering a police dispatch citation. City managers can introduce new rules dynamically without altering any backend code."
         </div>
         <div class="tip-box">
-            <strong> Pro-Tip:</strong> Text rule එකක් Runtime එකේදී Code compile නොකර evaluate කළ හැකි බව අවධාරණය කරන්න.
+            <strong> Pro-Tip:</strong> Code compile නොකර DSL rule එකක් runtime එකේදී dynamic evaluate වන බව පෙන්වන්න.
         </div>
     </div>
 </div>
@@ -312,38 +312,27 @@
 <!-- SCENE 7 -->
 <div class="section-card">
     <div class="section-title">
-        <span>Scene 7: Automated JUnit Test Suite, Build Verification & Conclusion</span>
-        <span class="time-badge">13:30 - 15:00 (1.5 Mins)</span>
+        <span>Scene 7: Automated Tests, Maven Build Verification & Conclusion</span>
+        <span class="time-badge">13:45 - 15:00 (1.25 Mins)</span>
     </div>
     <div class="grid-box">
         <div class="activity-box">
             <strong> තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
-            • Terminal එකේ <code>mvn clean test</code> run කරන්න.<br>
+            • Terminal එකේ <code>mvn test</code> run කරන්න.<br>
             • Automated Tests 6 ම pass වී <strong>BUILD SUCCESS</strong> ලැබෙන අයුරු පෙන්වන්න.<br>
-            • Interactive App එකේ <strong>Option 6 (Full End-to-End Simulation)</strong> කෙටියෙන් run කර පෙන්වන්න.<br>
-            • අවසානයේ Option 7 මඟින් Exit වී ස්තූතිවන්ත වන්න.
+            • අවසානයේ කැමරාව/මයික්‍රෆෝනය දෙසට හැරී ඇගයීම් මණ්ඩලයට ස්තූතිවන්ත වන්න.
         </div>
         <div class="speech-box">
             <strong> මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
-            "To guarantee system stability, we engineered a comprehensive automated test suite. Let us execute 'mvn clean test'.<br><br>
-            As you can observe in the build output: All six unit tests pass with zero failures and zero errors in less than a second, concluding with Maven BUILD SUCCESS. The tests rigorously validate tamper detection in the Decorator, power cascading in the Composite, multi-tier escalation in the Chain of Responsibility, object identity caching in the Flyweight, and complex Boolean logic in the Interpreter.<br><br>
-            In conclusion, SmartCity360 successfully applies the five Gang of Four design patterns to resolve critical architectural challenges in modularity, extensibility, loose coupling, memory optimization, and dynamic rule interpretation.<br><br>
+            "To prove code reliability and verify zero regression, we execute our automated JUnit 5 test suite with 'mvn test'.<br><br>
+            As you can observe: All six comprehensive test cases pass with zero failures and zero errors in milliseconds, concluding with Maven BUILD SUCCESS. This validates our Decorator, Composite, Chain of Responsibility, Flyweight, and Interpreter implementations.<br><br>
+            In conclusion, SmartCity360 provides an enterprise 3-tier solution featuring a Spring Boot REST API, MySQL database, and modern interactive dashboard UI that demonstrates the practical power of Gang of Four design patterns in solving real-world software architecture challenges.<br><br>
             Thank you very much for your time and evaluation."
         </div>
         <div class="tip-box">
-            <strong> Pro-Tip:</strong> "Thank you very much for your time and evaluation" යැයි පවසා recording එක stop කරන්න.
+            <strong> Pro-Tip:</strong> "Thank you very much for your time and evaluation" යැයි පවසා screen recording එක stop කරන්න.
         </div>
     </div>
-</div>
-
-<div class="general-guidelines" style="margin-top: 25px;">
-    <h3> Video Record කළ පසු කළ යුතු දේ (After Recording):</h3>
-    <ol>
-        <li>Video file එක <code>.mp4</code> format එකෙන් save වී ඇත්දැයි බලන්න.</li>
-        <li>Video එක play කර Audio එක පැහැදිලිව ඇසෙනවාද, Code සහ Terminal screen එක පැහැදිලිව පෙනෙනවාදැයි පරීක්ෂා කරන්න.</li>
-        <li>කාලය විනාඩි 10 ත් 15 ත් අතර පවතී දැයි තහවුරු කරගන්න.</li>
-        <li>Student Portal එකේ <strong>Demonstration Video</strong> section එකට upload කරන්න.</li>
-    </ol>
 </div>
 
 </body>
