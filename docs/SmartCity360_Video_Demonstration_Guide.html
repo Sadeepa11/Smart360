@@ -16,17 +16,18 @@
             padding: 20px;
         }
         .header-box {
-            background: linear-gradient(135deg, #1a5276, #2980b9);
+            background: linear-gradient(135deg, #0b132b, #1c2541);
             color: white;
             padding: 25px;
             border-radius: 8px;
             text-align: center;
             margin-bottom: 25px;
+            border-bottom: 4px solid #06b6d4;
         }
-        h1 { margin: 0 0 10px 0; font-size: 22pt; }
+        h1 { margin: 0 0 10px 0; font-size: 22pt; color: #38bdf8; }
         .subtitle { font-size: 13pt; opacity: 0.95; }
         .badge {
-            background-color: #27ae60;
+            background-color: #10b981;
             color: white;
             padding: 4px 10px;
             border-radius: 4px;
@@ -38,7 +39,7 @@
         .section-card {
             background: #ffffff;
             border: 1px solid #d6dbdf;
-            border-left: 6px solid #2980b9;
+            border-left: 6px solid #0284c7;
             border-radius: 6px;
             margin-bottom: 25px;
             padding: 18px 22px;
@@ -46,21 +47,22 @@
             page-break-inside: avoid;
         }
         .section-title {
-            color: #1a5276;
+            color: #0f172a;
             font-size: 14pt;
             font-weight: bold;
             margin-bottom: 12px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 6px;
             display: flex;
             justify-content: space-between;
-            border-bottom: 1px dashed #bdc3c7;
-            padding-bottom: 6px;
+            align-items: center;
         }
         .time-badge {
-            background-color: #e67e22;
+            background-color: #0284c7;
             color: white;
-            padding: 2px 8px;
-            border-radius: 4px;
             font-size: 10pt;
+            padding: 3px 8px;
+            border-radius: 12px;
         }
         .grid-box {
             display: grid;
@@ -68,79 +70,76 @@
             gap: 12px;
         }
         .activity-box {
-            background-color: #fcf3cf;
-            border-left: 4px solid #f39c12;
-            padding: 10px 14px;
-            border-radius: 4px;
-            font-size: 10.5pt;
-        }
-        .activity-box strong { color: #b9770e; }
-        .speech-box {
-            background-color: #e8f8f5;
-            border-left: 4px solid #27ae60;
+            background-color: #fefce8;
+            border: 1px solid #fde047;
+            border-left: 4px solid #eab308;
             padding: 12px 16px;
             border-radius: 4px;
             font-size: 11pt;
-            color: #145a32;
         }
-        .speech-box strong { color: #1e8449; display: block; margin-bottom: 6px; }
-        .tip-box {
-            background-color: #ebf5fb;
-            border-left: 4px solid #3498db;
-            padding: 8px 12px;
+        .activity-box strong { color: #854d0e; }
+        .speech-box {
+            background-color: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-left: 4px solid #16a34a;
+            padding: 14px 18px;
             border-radius: 4px;
-            font-size: 9.5pt;
-            color: #21618c;
-            margin-top: 8px;
+            font-size: 11pt;
+            font-style: italic;
+            color: #14532d;
         }
-        .general-guidelines {
-            background-color: #f8f9fa;
-            border: 1px solid #ebedef;
-            padding: 18px;
-            border-radius: 6px;
-            margin-bottom: 25px;
+        .speech-box strong {
+            font-style: normal;
+            color: #15803d;
+            display: block;
+            margin-bottom: 6px;
         }
-        .general-guidelines h3 { margin-top: 0; color: #2c3e50; }
-        ol, ul { padding-left: 20px; }
-        li { margin-bottom: 6px; }
+        .tip-box {
+            background-color: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-left: 4px solid #2563eb;
+            padding: 10px 14px;
+            border-radius: 4px;
+            font-size: 10pt;
+            color: #1e40af;
+        }
+        .tip-box strong { color: #1d4ed8; }
+        .page-break { page-break-after: always; }
         code {
-            background: #eaeded;
+            background-color: #e2e8f0;
             padding: 2px 5px;
             border-radius: 3px;
             font-family: Consolas, monospace;
             font-size: 10pt;
-            color: #c0392b;
-        }
-        .page-break {
-            page-break-after: always;
-            break-after: page;
         }
     </style>
 </head>
 <body>
 
 <div class="header-box">
-    <h1>SmartCity360 – Recorded Demonstration Video Guide</h1>
-    <div class="subtitle">Full-Stack Spring Boot + MySQL + Modern UI Dashboard (10–15 Mins)</div>
+    <h1>SmartCity360 – Video Demonstration Guide</h1>
+    <div class="subtitle">Full-Stack Spring Boot + MySQL + Obsidian Modern UI Dashboard (10–15 Mins)</div>
     <div class="badge">Object Oriented Design Patterns II (JIAT/OODP II / EX / 01)</div>
 </div>
 
-<div class="general-guidelines">
-    <h3> වීඩියෝව Record කිරීම සඳහා මූලික උපදෙස් (General Guidelines & Setup)</h3>
-    <ul>
+<div class="section-card">
+    <div class="section-title">
+        <span>📌 වීඩියෝව Record කිරීම සඳහා මූලික උපදෙස් (General Guidelines & Setup)</span>
+    </div>
+    <ul style="margin: 0; padding-left: 20px; font-size: 11pt;">
         <li><strong>කාල සීමාව (Duration):</strong> විනාඩි 10 ත් 15 ත් අතර (Strictly 10–15 Minutes).</li>
-        <li><strong>වීඩියෝ Format එක:</strong> MP4 (Resolution: 1080p Full HD හෝ 720p).</li>
+        <li><strong>වීඩියෝ Format එක:</strong> MP4 (1080p Full HD හෝ 720p).</li>
         <li><strong>Full-Stack Architecture එක පෙන්වීම:</strong>
-            <br>1. <strong>MySQL Database (`smartcity360_db`):</strong> MySQL Workbench / CLI එකේ tables 5 පෙන්වන්න.
-            <br>2. <strong>Spring Boot REST Backend:</strong> Terminal එකේ <code>mvn spring-boot:run</code> කර port 8080 එකේ run වන බව පෙන්වන්න.
-            <br>3. <strong>Interactive Modern Dashboard UI:</strong> Browser එකෙන් <code>http://localhost:8080</code> හෝ JavaFX window එකෙන් UI views පෙන්වන්න.
+            <ol>
+                <li><strong>MySQL Database (<code>smartcity360_db</code>):</strong> MySQL Workbench හෝ CLI එකෙන් tables 5 පෙන්වන්න.</li>
+                <li><strong>Spring Boot REST Backend:</strong> Terminal එකේ <code>mvn spring-boot:run</code> කර port 8080 එකේ run වන අයුරු පෙන්වන්න.</li>
+                <li><strong>Obsidian Modern UI Dashboard:</strong> Browser එකෙන් <code>http://localhost:8080</code> හි Left Sidebar, Live Status Pill, සහ 2-Column Split Console HUD පෙන්වන්න.</li>
+            </ol>
         </li>
-        <li><strong>භාෂාව (Language):</strong> Presentation එක සම්පූර්ණයෙන්ම <strong>English</strong> වලින් සිදු කළ යුතුය (කොළ පැහැති <strong>Speech Box</strong> හි ඇති script එක කියවන්න).</li>
-        <li><strong>තිරයේ කළ යුතු ක්‍රියාකාරකම්:</strong> කහ පැහැති <strong>Activity Box</strong> හි Sinhala & English වලින් පියවරෙන් පියවර දක්වා ඇත.</li>
+        <li><strong>භාෂාව (Language):</strong> Presentation එක 100% <strong>English</strong> වලින් සිදු කළ යුතුය (කොළ පැහැති <strong>Spoken Narration Script</strong> හි ඇති script එක කියවන්න).</li>
+        <li><strong>තිරයේ කළ යුතු දේ (Screen Activity):</strong> කතා කරන අතරතුර කළ යුතු දේවල් කහ පැහැති <strong>On-Screen Activity</strong> හි Sinhala & English වලින් දක්වා ඇත.</li>
     </ul>
 </div>
-
-<div class="page-break"></div>
 
 <!-- SCENE 1 -->
 <div class="section-card">
@@ -150,19 +149,19 @@
     </div>
     <div class="grid-box">
         <div class="activity-box">
-            <strong> තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
+            <strong>🖥️ තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
             • MySQL Workbench හෝ Terminal එකෙන් MySQL database එක (<code>smartcity360_db</code>) සහ එහි ඇති tables 5 (<code>citizen_complaints</code>, <code>energy_telemetry_logs</code>, ආදිය) පෙන්වන්න.<br>
             • Terminal එකේ <code>mvn spring-boot:run</code> කර Backend එක <code>http://localhost:8080</code> හි start වන අයුරු පෙන්වන්න.<br>
-            • Browser / JavaFX window එකෙන් <strong>SmartCity360 Modern Dashboard</strong> එක විවෘත කර "All systems operational" pill එක සහ Cards 5 පෙන්වන්න.
+            • Browser එකෙන් <strong>SmartCity360 Obsidian Modern Dashboard</strong> එක විවෘත කර වම්පස Navigation Sidebar එක, ඉහළ Live Server/Database status pill එක, GoF Architecture Matrix, සහ Subsystem Quick Stats 4 පෙන්වන්න.
         </div>
         <div class="speech-box">
-            <strong> මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
+            <strong>🎙️ මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
             "Good day, Respected Evaluators. My name is Sadeepa Sri Rohanasinghe, and today I am demonstrating the SmartCity360 Municipal Management Platform, developed for the Object Oriented Design Patterns II Final Assessment.<br><br>
             As a Senior Software Architect at UrbanTech Solutions, I have architected an enterprise 3-tier full-stack system. At the data layer, we have MySQL 8.0 running the `smartcity360_db` database with tables created by Hibernate. In the middle tier, we have a robust Spring Boot 3.x REST API hosting our five Gang of Four design patterns: Decorator, Composite, Chain of Responsibility, Flyweight, and Interpreter. At the presentation tier, we have a modern, responsive UI dashboard.<br><br>
             Let us now walk through each design pattern in action across our full-stack architecture."
         </div>
         <div class="tip-box">
-            <strong> Pro-Tip:</strong> Spring Boot console එකේ "Started SmartCity360Application" log එක සහ MySQL database tables පැහැදිලිව පෙන්වන්න.
+            <strong>💡 Pro-Tip:</strong> Spring Boot console එකේ "Started SmartCity360Application" log එක සහ MySQL database tables පැහැදිලිව පෙන්වන්න.
         </div>
     </div>
 </div>
@@ -175,21 +174,21 @@
     </div>
     <div class="grid-box">
         <div class="activity-box">
-            <strong> තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
-            • Dashboard එකෙන් <strong>Part A: Dynamic Security Wrappers</strong> card එක click කරන්න.<br>
-            • "Energy Meter Raw Data Stream" text area එක පෙන්වා, Encryption, Compression, සහ Authentication toggle switches 3 ම ON කරන්න.<br>
+            <strong>🖥️ තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
+            • වම්පස Navigation Sidebar එකෙන් (හෝ Dashboard Card එකෙන්) <strong>Part A: Dynamic Security Wrappers</strong> තෝරන්න.<br>
+            • වම්පස Controls Panel එකේ "Energy Meter Raw Data Stream" text area එක පෙන්වා, Encryption, Compression, සහ Authentication toggle switches 3 ම ON කරන්න.<br>
             • <strong>Process Stream &rarr;</strong> button එක click කරන්න.<br>
-            • Spring Boot REST API එක මඟින් Decorator pipeline එක හරහා payload එක wrap වී, verify වී, MySQL <code>energy_telemetry_logs</code> table එකට save වන output එක පෙන්වන්න.
+            • දකුණුපස Split-Screen HUD Console එකේ Decorator wrapping stages, byte reduction, SHA-256 HMAC verification, සහ MySQL database persist status එක පෙන්වන්න.
         </div>
         <div class="speech-box">
-            <strong> මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
+            <strong>🎙️ මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
             "In Part A, we demonstrate dynamic security wrapping for energy telemetry streams using the Decorator Pattern.<br><br>
             Energy meters transmit high-frequency electrical usage data that must be secured with AES-128 Encryption, GZIP Compression, and HMAC Authentication. If we used static inheritance, supporting all optional permutations would produce an explosion of eight subclasses.<br><br>
             By applying the Decorator Pattern, our base component 'MeterDataStream' remains completely unaltered, upholding the Open/Closed Principle. In our UI, we have toggled on Encryption, Compression, and Authentication.<br><br>
             When we click 'Process Stream', our Spring Boot backend dynamically assembles the decorator pipeline. Outbound, the payload is signed with a SHA-256 HMAC token, compressed, and encrypted with AES-128. Inbound, the stream unwraps in reverse: decrypted, decompressed, and authenticated against tampering. As displayed on screen, data integrity is 100% verified, and the telemetry audit log is persisted in MySQL."
         </div>
         <div class="tip-box">
-            <strong> Pro-Tip:</strong> Toggles on/off කර runtime එකේදී dynamic composition සිදුවන බව පෙන්වන්න.
+            <strong>💡 Pro-Tip:</strong> Toggles on/off කර runtime එකේදී dynamic composition සිදුවන බව පෙන්වන්න.
         </div>
     </div>
 </div>
@@ -204,21 +203,21 @@
     </div>
     <div class="grid-box">
         <div class="activity-box">
-            <strong> තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
-            • Navigation එකෙන් <strong>Part B: Smart Zone Hierarchy</strong> view එකට යන්න.<br>
-            • Breadcrumb trail එක පෙන්වන්න: <code>Metro Colombo &rarr; Districts &rarr; Streets &rarr; Buildings</code>.<br>
-            • <strong>Execute Recursive Power Shutdown</strong> button එක click කරන්න &rarr; Colombo 01 power draw 0 වී, city power draw 2200 kWh සිට 340 kWh දක්වා අඩුවන අයුරු පෙන්වන්න.<br>
+            <strong>🖥️ තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
+            • වම්පස Navigation Sidebar එකෙන් <strong>Part B: Smart Zone Hierarchy</strong> view එකට යන්න.<br>
+            • Interactive Zone Hierarchy Tree එක සහ Breadcrumb trail එක පෙන්වන්න (<code>Metro Colombo &rarr; Districts &rarr; Streets &rarr; Buildings</code>).<br>
+            • <strong>Execute Recursive Power Shutdown</strong> button එක click කර Colombo 01 power draw 0 වී, metro grid load 2200 kWh සිට 340 kWh දක්වා අඩුවන අයුරු සහ දකුණුපස HUD Console එකේ recursive cascade audit log එක පෙන්වන්න.<br>
             • <strong>Execute Recursive Usage Report</strong> click කර power නැවත restore කර පෙන්වන්න.
         </div>
         <div class="speech-box">
-            <strong> මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
+            <strong>🎙️ මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
             "Moving to Part B: Smart Zone Hierarchy, modeled using the Composite Pattern.<br><br>
             City infrastructure is organized in a natural spatial tree: City contains Districts, Districts contain Streets, and Streets contain individual Buildings. We need commands like 'shutdownPower()' and 'reportUsage()' to execute uniformly whether invoked on a single building or an entire district.<br><br>
             In our design, 'Building' is a Leaf node, while 'ZoneComposite' holds a collection of children and recursively cascades operations.<br><br>
             Observing the screen: The total city power consumption starts at 2,200 kilowatt-hours. When we click 'Execute Recursive Power Shutdown' on Colombo 01, the command automatically cascades through York Street and constituent buildings. Colombo 01 drops to 0 kWh, reducing metro grid load to 340 kWh, while Colombo 05 remains operational. Clicking 'Execute Recursive Usage Report' recalculates the bottom-up consumption and restores full grid power. This demonstrates seamless polymorphic recursion without client-side type checking."
         </div>
         <div class="tip-box">
-            <strong> Pro-Tip:</strong> Single building සහ whole district දෙකම එකම interface එකකින් uniform ලෙස ක්‍රියා කරන බව අවධාරණය කරන්න.
+            <strong>💡 Pro-Tip:</strong> Single building සහ whole district දෙකම එකම interface එකකින් uniform ලෙස ක්‍රියා කරන බව අවධාරණය කරන්න.
         </div>
     </div>
 </div>
@@ -231,23 +230,22 @@
     </div>
     <div class="grid-box">
         <div class="activity-box">
-            <strong> තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
-            • Dashboard එකෙන් <strong>Part C: Complaint Escalation</strong> view එකට යන්න.<br>
-            • Complaint description එකක් enter කරන්න (උදා: "Transformer explosion and power outage").<br>
-            • Severity Level එක <strong>Critical</strong> ලෙස select කරන්න.<br>
+            <strong>🖥️ තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
+            • වම්පස Navigation Sidebar එකෙන් <strong>Part C: Complaint Escalation</strong> view එකට යන්න.<br>
+            • වම්පස Panel එකේ Complaint description enter කරන්න (උදා: "High-voltage grid fluctuation in Colombo Port zone").<br>
+            • Severity Level එක <strong>Critical (City General Manager)</strong> ලෙස select කරන්න.<br>
             • <strong>Submit & Escalate &rarr;</strong> button එක click කරන්න.<br>
-            • Local Staff &rarr; Supervisor &rarr; City General Manager වෙත escalate වී complaint එක resolve වන Audit Log එක පෙන්වන්න.<br>
-            • MySQL table <code>citizen_complaints</code> හි අදාළ record එක save වී ඇති අයුරු පෙන්වන්න.
+            • දකුණුපස Split-Screen HUD Console එකේ Local Staff &rarr; Supervisor &rarr; City General Manager වෙත escalate වී complaint එක resolve වන Audit Log එක සහ MySQL table <code>citizen_complaints</code> persist status එක පෙන්වන්න.
         </div>
         <div class="speech-box">
-            <strong> මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
+            <strong>🎙️ මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
             "Now let us examine Part C: Citizen Complaint Escalation, implemented with the Chain of Responsibility Pattern.<br><br>
             Citizen complaints range from minor potholes to municipal emergencies. Directly hardcoding routing logic into the submission portal creates tight coupling. The Chain of Responsibility decouples the sender from the receiver by passing requests along an escalation chain of candidate handlers.<br><br>
             In our UI: We enter a critical complaint regarding a transformer explosion. When we click 'Submit & Escalate', the request hits our Spring Boot endpoint. In the backend, Local Staff checks their authority—it exceeds their tier, so it delegates to the Supervisor, who in turn escalates to the City General Manager. The City General Manager triggers the municipal emergency protocol.<br><br>
             As shown in the audit box and in our MySQL `citizen_complaints` table, the entire escalation path, the resolving authority, and timestamped resolution notes are recorded."
         </div>
         <div class="tip-box">
-            <strong> Pro-Tip:</strong> Request එකක් drop නොවී MySQL database එකේ audit trail එකක් save වන බව පෙන්වන්න.
+            <strong>💡 Pro-Tip:</strong> Request එකක් drop නොවී MySQL database එකේ audit trail එකක් save වන බව පෙන්වන්න.
         </div>
     </div>
 </div>
@@ -262,21 +260,21 @@
     </div>
     <div class="grid-box">
         <div class="activity-box">
-            <strong> තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
-            • Navigation එකෙන් <strong>Part D: Smart Street Lights</strong> view එකට යන්න.<br>
+            <strong>🖥️ තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
+            • වම්පස Navigation Sidebar එකෙන් <strong>Part D: Smart Street Lights</strong> view එකට යන්න.<br>
             • Intrinsic State (shared hardware specs & 2KB calibration data) සහ Extrinsic State (GPS coordinates & dimming) විස්තර කරන්න.<br>
             • <strong>Run 50,000 Lights Empirical Benchmark</strong> button එක click කරන්න.<br>
-            • Terminal / UI එකේ Benchmark metrics පෙන්වන්න: Without Flyweight: 108 MB vs With Flyweight: 4.74 MB, **95.6% memory savings**!
+            • දකුණුපස HUD Console එකේ Benchmark metrics පෙන්වන්න: Without Flyweight: 108 MB vs With Flyweight: 4.74 MB, <strong>95.6% memory savings</strong>!
         </div>
         <div class="speech-box">
-            <strong> මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
+            <strong>🎙️ මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
             "In Part D, we tackle massive IoT device scaling using the Flyweight Pattern for smart streetlights.<br><br>
             A metropolitan grid operates tens of thousands of streetlights. Every single light fixture shares identical physical specifications: bulb model, wattage, color temperature, and calibration curves. Only their GPS coordinates, power status, and dimming levels are unique.<br><br>
             We separated the state into Intrinsic and Extrinsic. The Intrinsic State—including heavy 2KB spectral calibration arrays—is encapsulated in the immutable 'StreetLightType' flyweight and cached by 'StreetLightFactory'. The Extrinsic State is passed at runtime.<br><br>
             When we click 'Run 50,000 Lights Empirical Benchmark', our backend executes an empirical JVM heap benchmark: Without the Flyweight pattern, duplicating specifications across 50,000 objects consumes 108.01 megabytes of heap. With the Flyweight pattern, all 50,000 objects share a single cached flyweight instance, slashing memory consumption to just 4.74 megabytes—achieving a verified 95.6% memory reduction."
         </div>
         <div class="tip-box">
-            <strong> Pro-Tip:</strong> 95.6% memory savings එක සහ JVM Garbage Collection pauses අවම වන බව පවසන්න.
+            <strong>💡 Pro-Tip:</strong> 95.6% memory savings එක සහ JVM Garbage Collection pauses අවම වන බව පවසන්න.
         </div>
     </div>
 </div>
@@ -289,20 +287,20 @@
     </div>
     <div class="grid-box">
         <div class="activity-box">
-            <strong> තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
-            • Dashboard එකෙන් <strong>Part E: City Policy Rules DSL</strong> view එකට යන්න.<br>
+            <strong>🖥️ තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
+            • වම්පස Navigation Sidebar එකෙන් <strong>Part E: City Policy Rules DSL</strong> view එකට යන්න.<br>
             • Select Policy Rule dropdown එකෙන් "Night Noise Limit (noise_level > 70 AND hour >= 22)" තෝරන්න.<br>
             • Input telemetry query එක පෙන්වන්න (<code>noise_level: 78, hour: 23</code>).<br>
-            • <strong>Evaluate Policy &rarr;</strong> button එක click කරන්න &rarr; AST Tree එක compile වී, VIOLATION DETECTED වී, "DISPATCH POLICE WARNING" action එක trigger වන අයුරු පෙන්වන්න.
+            • <strong>Evaluate Policy &rarr;</strong> button එක click කරන්න &rarr; දකුණුපස HUD Console එකේ AST Tree එක compile වී, VIOLATION DETECTED වී, "DISPATCH POLICE WARNING" action එක trigger වන අයුරු පෙන්වන්න.
         </div>
         <div class="speech-box">
-            <strong> මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
+            <strong>🎙️ මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
             "For Part E, we address dynamic municipal regulations using the Interpreter Pattern.<br><br>
             City ordinances—such as night noise limits and commercial parking curfews—are modified frequently. Hardcoding these rules into Java if-else statements requires rebuilding and redeploying production servers for every policy amendment.<br><br>
             We designed a Domain-Specific Language (DSL) mini-language. Our 'PolicyParser' translates plain-text rules into an Abstract Syntax Tree of Expression objects. In our UI, we select the Night Noise Rule: 'noise_level > 70 AND hour >= 22'. When evaluated against late-night residential telemetry at 11 PM with 78 decibels, the AST evaluates to TRUE, automatically triggering a police dispatch citation. City managers can introduce new rules dynamically without altering any backend code."
         </div>
         <div class="tip-box">
-            <strong> Pro-Tip:</strong> Code compile නොකර DSL rule එකක් runtime එකේදී dynamic evaluate වන බව පෙන්වන්න.
+            <strong>💡 Pro-Tip:</strong> Code compile නොකර DSL rule එකක් runtime එකේදී dynamic evaluate වන බව පෙන්වන්න.
         </div>
     </div>
 </div>
@@ -317,20 +315,20 @@
     </div>
     <div class="grid-box">
         <div class="activity-box">
-            <strong> තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
+            <strong>🖥️ තිරයේ කළ යුතු දේ (On-Screen Activity):</strong><br>
             • Terminal එකේ <code>mvn test</code> run කරන්න.<br>
             • Automated Tests 6 ම pass වී <strong>BUILD SUCCESS</strong> ලැබෙන අයුරු පෙන්වන්න.<br>
             • අවසානයේ කැමරාව/මයික්‍රෆෝනය දෙසට හැරී ඇගයීම් මණ්ඩලයට ස්තූතිවන්ත වන්න.
         </div>
         <div class="speech-box">
-            <strong> මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
+            <strong>🎙️ මයික්‍රෆෝනයෙන් කිව යුතු දෙබස් (Spoken Narration Script):</strong>
             "To prove code reliability and verify zero regression, we execute our automated JUnit 5 test suite with 'mvn test'.<br><br>
             As you can observe: All six comprehensive test cases pass with zero failures and zero errors in milliseconds, concluding with Maven BUILD SUCCESS. This validates our Decorator, Composite, Chain of Responsibility, Flyweight, and Interpreter implementations.<br><br>
             In conclusion, SmartCity360 provides an enterprise 3-tier solution featuring a Spring Boot REST API, MySQL database, and modern interactive dashboard UI that demonstrates the practical power of Gang of Four design patterns in solving real-world software architecture challenges.<br><br>
             Thank you very much for your time and evaluation."
         </div>
         <div class="tip-box">
-            <strong> Pro-Tip:</strong> "Thank you very much for your time and evaluation" යැයි පවසා screen recording එක stop කරන්න.
+            <strong>💡 Pro-Tip:</strong> "Thank you very much for your time and evaluation" යැයි පවසා screen recording එක stop කරන්න.
         </div>
     </div>
 </div>

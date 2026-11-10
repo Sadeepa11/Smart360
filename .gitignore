@@ -6,7 +6,6 @@ target/
 # IDE and Editor files
 .idea/
 *.iml
-.vscode/
 .project
 .classpath
 .settings/
@@ -19,3 +18,5 @@ Desktop.ini
 # Temporary files
 *.tmp
 *.bak
+config.bat
+node_modules
