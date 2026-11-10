@@ -1,3 +1,5 @@
+import utils.transport
+import utils.session
 import os
 import docx
 from docx.shared import Inches, Pt, RGBColor
